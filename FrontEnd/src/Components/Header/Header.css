@@ -1,0 +1,57 @@
+
+body, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #282c34; 
+    color: white;
+    border-radius: 20px;
+}
+
+
+h3 {
+    font-size: 24px; 
+}
+
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: transparent; 
+    color: white; 
+    padding: 10px 15px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none; 
+}
+
+
+.btn:hover, .btn.active {
+    color: #21a0f6; 
+}
+
+.btn.active {
+    text-decoration: underline; 
+}
+
+
+@media (max-width: 600px) {
+    h3 {
+        font-size: 20px; 
+    }
+    .btn {
+        padding: 5px 10px;
+    }
+}
